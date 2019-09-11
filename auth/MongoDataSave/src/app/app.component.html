@@ -1,0 +1,11 @@
+
+<div class="container" style="text-align: center; margin-top: 50px;" >
+<form (submit)="senddata()">
+  <input type="email" class="form-control" placeholder="Enter Email" [(ngModel)]="email" name="email" required>
+  <br>
+
+  <input type="password" class="form-control" placeholder="Enter Password" [(ngModel)]="password" name="password">
+  <br> <br>
+  <button type="submit" class="btn btn-success">Register</button>
+</form>
+</div>

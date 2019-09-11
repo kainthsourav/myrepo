@@ -1,0 +1,90 @@
+<h1>Welcome</h1>
+
+<div class="jumbotron">
+  <!-- ngIf -->
+<button (click)="show =!show">Click Here</button>
+<div *ngIf="show">Text to Show</div>
+
+<!-- ngSwitchCase -->
+
+<ul [ngSwitch]="Element">
+  <li *ngSwitchCase="'Kainth'">Kainth</li>
+  <li *ngSwitchCase="'Sourav'">Sourav</li>
+  <li *ngSwitchCase="'Himi'">Himi</li>
+  <li *ngSwitchCase="'Shivam'">Shivam</li>
+  <li *ngSwitchCase="'Urvi'">Urvi</li>
+</ul>
+
+<!-- ngFor -->
+<div *ngIf="show">
+<div *ngFor="let color of color">
+  <h3>{{color}}</h3>
+</div>
+
+</div>
+</div>
+
+<div class="container">
+<table class="table table-dark">
+  <thead>
+    <tr>
+        <th>Sr No</th>
+        <th>Name</th>
+    </tr>
+  </thead>
+<tbody>
+  <tr *ngFor="let color of colors"> 
+    <td>{{color.sr}}</td>
+       <td>{{color.name}}</td>
+  </tr>
+</tbody>
+</table>
+</div>
+
+
+<!-- Using Class  Constructer -->
+
+<div class="container">
+    <table class="table table-dark">
+      <thead>
+        <tr>
+            <th>Sr No</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Department</th>
+        </tr>
+      </thead>
+    <tbody>
+      <tr *ngFor="let Emp of Employee"> 
+        <td>{{Emp.sr}}</td>
+           <td>{{Emp.name}}</td>
+           <td>{{Emp.Gender}}</td>
+           <td>{{Emp.Department}}</td>
+
+      </tr>
+    </tbody>
+    </table>
+
+    <!-- Pipes -->
+    <p>Birthday is {{ birthday | date }}</p>
+    <p>Birthday is {{ birthday | date: "MMMM:dd:yyyy" }}</p>
+    <p>Salary is {{ Salary | currency:'INR':true }}</p>
+
+
+    <p>Name: {{ Name | uppercase}}</p>
+    <p>Address: {{ Address | lowercase}}</p>
+    <p>Salary:{{ Salary | currency:'INR':true }}</p>
+    <p>Salary:{{ Salary | currency:'EUR':true }}</p>
+    <p>DOJ:{{DOJ | date: "MMMM:dd:yyyy" }}</p>
+    <p>DOR:{{DOR | date: "MM:dd:yyyy" }}</p>
+    <p>Percentage {{ per | percent:'2.2-5' }}</p>
+
+
+
+
+
+
+
+
+
+    </div>

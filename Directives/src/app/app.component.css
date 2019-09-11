@@ -1,0 +1,17 @@
+h1
+{
+    text-align: center;
+}
+div
+{
+text-align: center;
+}
+
+ul{
+    list-style-type: none
+}
+table
+{
+    border: 1px solid black;
+    text-align: center;
+}

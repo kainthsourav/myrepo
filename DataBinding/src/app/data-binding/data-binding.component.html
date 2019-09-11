@@ -1,0 +1,33 @@
+<h1>Data Binding</h1>
+<input type="text"  [id]="MyID" value="Kainth"> 
+
+<!-- <input type="text" disabled id="{{MyID}}" value="Kainth">  -->
+
+<!-- Class Binding in Angular -->
+
+<h2 [class]="changecolor">Welcome</h2>
+
+
+<!-- Ng class Directive -->
+
+<h1 [ngClass]="changecolor_1">Welcome</h1>
+
+
+
+<h2 [style.color]="hasError?'red':'green'">Style Binding with conditional</h2>
+<button class="btn btn-success" (click)="change()">Change</button>
+
+<!-- style binding -->
+
+
+
+<!-- Key Event -->
+
+<input type="text" name="name" (keyup)="KeyFun($Event)">
+
+
+<!-- *NgIf -->
+
+<h1 ngif="true">Hello This iS NG if</h1>
+
+

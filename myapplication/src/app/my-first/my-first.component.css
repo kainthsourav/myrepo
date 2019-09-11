@@ -1,0 +1,30 @@
+#div1
+{
+ text-align: center;
+ height: 200px;
+ padding: 50px;
+}
+#div2
+{
+text-align: center;
+background-color: blueviolet;
+height: 100%;
+padding: 50px;
+}
+#div2:hover
+{
+    
+    background-color: red;
+}
+
+#div3
+{
+    text-align: center;
+    padding: 50px;
+    background-color: aquamarine;
+}
+
+#div3:hover
+{
+    background-color: green;
+}
